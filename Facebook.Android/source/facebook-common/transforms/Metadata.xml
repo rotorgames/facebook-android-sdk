@@ -37,4 +37,6 @@
 
     <remove-node path="/api/package[@name='com.facebook.login']/class[@name='LoginFragment']/method[@name='createLoginClient' and count(parameter)=0]" />
     <remove-node path="/api/package[@name='com.facebook.login']/class[@name='LoginMethodHandler']/field[@name='loginClient']" />
+
+    <remove-node path="/api/package[@name='com.facebook.login']/class[@name='NativeAppLoginMethodHandler']/method[@name='tryAuthorize' and count(parameter)=1 and parameter[1][@type='com.facebook.login.LoginClient.Request']]" />
 </metadata>

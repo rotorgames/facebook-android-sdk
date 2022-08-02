@@ -2,4 +2,10 @@
     <attr path="/api/package[@name='com.facebook']" name="managedName">Xamarin.Facebook</attr>
     <attr path="/api/package[@name='com.facebook.login']" name="managedName">Xamarin.Facebook.Login</attr>
     <attr path="/api/package[@name='com.facebook.login.widget']" name="managedName">Xamarin.Facebook.Login.Widget</attr>
+
+    <attr path="/api/package[@name='com.facebook.login.widget']/class[@name='LoginButton']" name="visibility">public</attr>
+
+    <add-node path="/api/package[@name='com.facebook.login.widget']">
+        <class abstract="false" deprecated="not deprecated" final="false" name="LoginButton.LoginButtonProperties" static="true" visibility="public"/>
+    </add-node>
 </metadata>
